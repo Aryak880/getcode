@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import {LinkedListCard, ArrayListCard, Doublylinkedlist, 
+        LinkedListWithHeader, Navbar, Error, Footer,
+        CircularLinkedList, StackUsingArray, StackUsingLinkedList,
+        QueueUsingArray, QueueUsingLinkedList
+      } from './components';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Navbar />
+      <Switch>
+        <Route path='/' component={LinkedListCard} exact />
+        <Route path='/arraylist' component={ArrayListCard} />
+        <Route path='/doublylinkedlist' component={Doublylinkedlist}/>
+        <Route path='/linkedlistwithheadernode' component={LinkedListWithHeader} />
+        <Route path='/circularlinkedlist' component={CircularLinkedList} />
+        <Route path='/stackusingarray' component={StackUsingArray} />
+        <Route path='/stackusinglinkedlist' component={StackUsingLinkedList} />
+        <Route path='/queueusingarray' component={QueueUsingArray} />
+        <Route path='/queueusinglinkedlist' component={QueueUsingLinkedList} />
+        <Route component={Error} />
+      </Switch>
+      <Footer />
+    </main>
   );
 }
 

@@ -1,0 +1,19 @@
+.copied{
+    position: fixed;
+    background: #DCE35B;
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);
+    background: linear-gradient(to right, #45B649, #DCE35B);
+    color: #fff;
+    font-size: 30;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.copied span{
+    float: right;
+    color: #EF4746;
+    font-size: 22px;
+    font-weight: bolder;
+    padding-right: 10px;
+}
