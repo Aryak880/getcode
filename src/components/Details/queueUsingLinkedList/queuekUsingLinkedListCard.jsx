@@ -22,7 +22,7 @@ class Card extends React.Component {
   })
     setTimeout(() => {
       this.setState({coppied: false});
-  }, 1500);
+  }, 2000);
   }
 
   render() {
@@ -52,7 +52,7 @@ class Card extends React.Component {
           ))
         }
         <br />
-        <div className="functionHeading"><h2>Doubly Linked list functions</h2></div>
+        <div className="functionHeading"><h2>Queue using linked list functions</h2></div>
         <div className="cardContainer">
           {
             Fun.map(e => (

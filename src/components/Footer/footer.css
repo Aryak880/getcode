@@ -25,19 +25,20 @@
 .footer ul li{
     margin: 10px;
     position: relative;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
 
 .footer ul li:hover{
     /* top: 2px; */
     border: 2px solid rgb(224,60,59);
-    box-shadow: 0 0 0 4px;
+    box-shadow: 0 0 0 2px;
 }
 
 @media only screen and (max-width: 768px) {
     .footer{
         border: 0;
+        width: 105%;
     }
     .footer ul li:hover{
         /* top: 2px; */

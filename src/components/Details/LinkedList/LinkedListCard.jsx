@@ -22,7 +22,7 @@ class Card extends React.Component {
   })
     setTimeout(() => {
       this.setState({coppied: false});
-  }, 1500);
+  }, 2000);
   }
 
   render() {

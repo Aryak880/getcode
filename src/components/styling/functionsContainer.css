@@ -116,7 +116,7 @@ button:active{
     background: #C9D6FF;
     background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
     background: linear-gradient(to right, #E2E2E2, #C9D6FF);
-    height: 30px;
+    /* height: 30px; */
     padding: 18px 0 20px 4px;
     width: 95%;
     border-radius: 5px;
@@ -205,6 +205,8 @@ button:active{
 
     .cardContainer{
         flex-direction: column;
+        justify-content: none;
+        align-items: none;
     }
 
     .card{
@@ -238,8 +240,13 @@ button:active{
     }
 
     .boilerContainer{
-        width: 97%;
+        width: 100%;
     }
+
+    .boilerHeading{
+        font-size: small;
+    }
+
 
     .boilerCode{
         height: 300px;
@@ -251,5 +258,14 @@ button:active{
 
     .boilerButton button{
         font-size: 17px;
+    }
+
+
+    /* about types of function */
+    .functionHeading{
+        width: 107%;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
     }
 }
