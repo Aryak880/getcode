@@ -40,7 +40,7 @@
 
 @media only screen and (max-width: 768px) {
     .footer{
-        border: 0;
+        /* border: 0; */
         width: 105%;
     }
     .footer ul li:hover{
@@ -51,6 +51,7 @@
 }
 
 @keyframes Border{
+
     20%,80%{
         border-color: rgba(255, 4, 4, 1);
     }
