@@ -12,14 +12,13 @@ struct node
 {
     int data;
     struct node *next;
-}
+} *rear = NULL;
 
 1. Function arguments
         a. element to be inserted
 2. Function return void
 3. You must have declare globle node pointer
-        a. front // for point to the front of queue
-        b. rear // for point to the front of queue
+        a. rear // for point to the last of queue
 */
 
 //Function defination
@@ -34,14 +33,15 @@ void enqueue(int data)
     }
 
     temp->data = data;
-    temp->next = NULL;
 
-    if(isEmpty())
-        front = temp;
+    if(rear == NULL){
+        rear = temp;
+        rear->next = rear;
+        return;
+    }
 
-    else
+    temp->next = rear->next;
     rear->next = temp;
-
     rear = temp;
 }
 `
@@ -59,12 +59,11 @@ struct node
 {
     int data;
     struct node *next;
-}
+} *rear = NULL;
 
-1. Function return int data of dequeued node
+1. Function return data of the deleted node
 2. You must have declare globle node pointer
-        a. front // for point to the front of queue
-        b. rear // for point to the last of queue
+        a. rear // for point to the last of queue
 */
 
 //Function defination
@@ -73,22 +72,30 @@ int dequeue()
     int data;
     struct node *temp;
 
-    if(isEmpty()){
+    //If the queue is empty
+    if(rear == NULL){
         printf("  Queue underflow  ");
         return -255;
     }
 
-    data = front->data;
-    temp = front;
+    if(rear->next == rear){
+        temp = rear;
+        rear = NULL;
+    }
 
-    front = front->next;
+    else{
+        temp = rear->next;
+        rear->next = temp->next;
+    }
+
+    data = temp->data;
     free(temp);
     return data;
 }
 `
     },
     {
-        funName: "Peek element",
+        funName: "peek element",
         working:
 `//Function declaration
 int peek();
@@ -100,27 +107,26 @@ struct node
 {
     int data;
     struct node *next;
-}
+} *rear = NULL;
 
-1. Function return int data of peeked node if empty return -255
+1. Function return data of the first node
 2. You must have declare globle node pointer
-        a. front // for point to the front of queue
-        b. rear // for point to the front of queue
+        a. rear // for point to the last of queue
 */
 
 //Function defination
 int peek()
 {
-    if(isEmpty()){
+    //If the queue is empty
+    if(rear == NULL){
         printf("  Queue underflow  ");
         return -255;
     }
 
-    return front->data;
+    return rear->next->data;
 }
 `
     },
-    
     {
         funName: "Is queue empty?",
         working:
@@ -134,24 +140,22 @@ struct node
 {
     int data;
     struct node *next;
-}
+} *rear = NULL;
 
-1. Function return 1 if queue is empty else 0
+1. Function return 1 if true else 0
 2. You must have declare globle node pointer
-        a. front // for point to the front of queue
-        b. rear // for point to the front of queue
+        a. rear // for point to the last of queue
 */
 
 //Function defination
 int isEmpty()
 {
-    return (front == NULL);
+    return (rear == NULL);
 }
 `
     },
-    
     {
-        funName: "print queue elements",
+        funName: "Print queue elements",
         working:
 `//Function declaration
 void printList();
@@ -163,12 +167,11 @@ struct node
 {
     int data;
     struct node *next;
-}
+} *rear = NULL;
 
-1. Function return 1 if queue is empty else 0
+1. Function return void
 2. You must have declare globle node pointer
-        a. front // for point to the front of queue
-        b. rear // for point to the front of queue
+        a. rear // for point to the last of queue
 */
 
 //Function defination
@@ -180,15 +183,17 @@ void printList()
         return;
     }
 
-    p = front;
+    p = rear->next;
     printf("List is  ");
-    while(p != NULL){
+
+    do{
         printf("%d ", p->data);
         p = p->next;
-    }
+    }while(p != rear->next);
 }
 `
     },
+
 ];
 
 

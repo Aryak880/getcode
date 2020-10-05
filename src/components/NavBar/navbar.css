@@ -31,9 +31,11 @@
 }
 
 .navLinksContainer ul #dropdown-item-button:hover{
-    box-shadow: 0px 0px 15px 0 rgba(221,57,75, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(221,57,75, 0.5);
     border-bottom: 3px solid rgba(255, 4, 4, 0.6);
     margin-top: 11px;
+    background: -webkit-linear-gradient(to right, #C9D6FF, #E2E2E2);
+    background: linear-gradient(to right, #C9D6FF, #E2E2E2);
 }
 
 .navLinksContainer button{

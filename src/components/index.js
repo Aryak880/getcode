@@ -7,6 +7,7 @@ export {default as StackUsingArray} from './Details/StackUsingArray/stackUsingAr
 export {default as StackUsingLinkedList} from './Details/stackUsingLinkedList/stackUsingLinkedListCard';
 export {default as QueueUsingArray} from './Details/queueUsingArray/queuekUsingArrayCard';
 export {default as QueueUsingLinkedList} from './Details/queueUsingLinkedList/queuekUsingLinkedListCard';
+export {default as QueueUsingCircularLinkedList} from './Details/queueUsingCircularLinkedList/queuekUsingCircularLinkedListCard';
 export {default as Navbar} from './NavBar/Navbar';
 export {default as Error} from './NavBar/Error';
 export {default as Footer} from './Footer/Footer';

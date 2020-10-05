@@ -8,10 +8,11 @@
     background: #757F9A;
     background: -webkit-linear-gradient(-50deg, #D7DDE8, #757F9A);
     background: linear-gradient(-50deg, #D7DDE8, #757F9A);
-    border-top: 4px solid rgba(224,60,59, 0.5);
+    border-top: 3px solid rgba(224,60,59, 0.5);
     border-radius: 5px 5px 0 0;
     transition-duration: 1s;
     opacity: 0.8;
+    animation: Border 2s ease-in-out infinite;
 }
 
 .footer ul{
@@ -35,6 +36,8 @@
     box-shadow: 0 0 0 2px;
 }
 
+/* rgba(255, 4, 4, 0.6) */
+
 @media only screen and (max-width: 768px) {
     .footer{
         border: 0;
@@ -45,4 +48,10 @@
         border: 0;
         box-shadow: 0;
     }   
+}
+
+@keyframes Border{
+    20%,80%{
+        border-color: rgba(255, 4, 4, 1);
+    }
 }

@@ -18,7 +18,6 @@ const List = () => {
   return(
     <ul>
           <DropdownButton id="dropdown-item-button" title="Linked List">
-            <Dropdown.ItemText>Types of implementation of linked list</Dropdown.ItemText>
             <Link to="/" style={LinkStyle}><Dropdown.Item as="button">Linked List</Dropdown.Item></Link>
             <Link to="/circularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Circular linked list</Dropdown.Item></Link>
             <Link to="/doublylinkedlist" style={LinkStyle}><Dropdown.Item as="button">Doubly Linked list</Dropdown.Item></Link>
@@ -26,20 +25,18 @@ const List = () => {
           </DropdownButton>
 
           <DropdownButton id="dropdown-item-button" title="Array List">
-            <Dropdown.ItemText>Types of implementation of array</Dropdown.ItemText>
-            <Link to="/arraylist" style={LinkStyle}><Dropdown.Item as="button">Array list</Dropdown.Item></Link>
+            <Link to="/arraylist" style={LinkStyle}><Dropdown.Item as="button" style={{minWidth: "250px"}}>Array list</Dropdown.Item></Link>
           </DropdownButton>
 
           <DropdownButton id="dropdown-item-button" title="Stack">
-            <Dropdown.ItemText>Types of implementation of stack</Dropdown.ItemText>
             <Link to="/stackusingarray" style={LinkStyle}><Dropdown.Item as="button">Stack using array</Dropdown.Item></Link>
             <Link to="/stackusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Stack using linked list</Dropdown.Item></Link>
           </DropdownButton>
 
           <DropdownButton id="dropdown-item-button" title="Queue">
-            <Dropdown.ItemText>Types of implementation of queue</Dropdown.ItemText>
             <Link to="/queueusingarray" style={LinkStyle}><Dropdown.Item as="button">Queue using array</Dropdown.Item></Link>
             <Link to="/queueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using linked list</Dropdown.Item></Link>
+            <Link to="/queueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using circular linked list</Dropdown.Item></Link>
           </DropdownButton>
     </ul>
   )
@@ -54,7 +51,7 @@ const MobileList = () => {
           setactive(!active)
         }}
       >
-        {active ? <ImCross size={25}/>: <RiMenuLine size={30}/>}
+        {active ? <ImCross size={20}/>: <RiMenuLine size={30}/>}
       </button>
       {active && <List />}
     </div>
@@ -77,10 +74,12 @@ function Navbar() {
   return (
       <div className="navContainer">
           <div className="logoContainer">
-            <img src={logo1} alt="Logo" style={{
-              height: "80px",
-              backgroundColor: "#F0F0F0"
+          <Link to="/" style={LinkStyle}>
+              <img src={logo1} alt="Logo" style={{
+                height: "80px",
+                backgroundColor: "#F0F0F0"
               }}/>
+          </Link>
           </div>
             
           <div className="navLinksContainer">

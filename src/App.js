@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import {LinkedListCard, ArrayListCard, Doublylinkedlist, 
         LinkedListWithHeader, Navbar, Error, Footer,
         CircularLinkedList, StackUsingArray, StackUsingLinkedList,
-        QueueUsingArray, QueueUsingLinkedList
+        QueueUsingArray, QueueUsingLinkedList, QueueUsingCircularLinkedList
       } from './components';
 
 
@@ -22,6 +22,7 @@ function App() {
         <Route path='/stackusinglinkedlist' component={StackUsingLinkedList} />
         <Route path='/queueusingarray' component={QueueUsingArray} />
         <Route path='/queueusinglinkedlist' component={QueueUsingLinkedList} />
+        <Route path='/queueusingcircularlinkedlist' component={QueueUsingCircularLinkedList} />
         <Route component={Error} />
       </Switch>
       <Footer />
