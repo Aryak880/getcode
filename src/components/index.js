@@ -1,14 +1,36 @@
-export {default as LinkedListCard} from './Details/LinkedList/LinkedListCard';
-export {default as ArrayListCard} from './Details/ArrayList/ArrayListCard';
-export {default as Doublylinkedlist} from './Details/DoublyLinkedList/DoublyLinkedListCard';
-export {default as LinkedListWithHeader} from './Details/LinkedListWithHeaderNode/LinkedListWithHeaderCard';
-export {default as CircularLinkedList} from './Details/CircularLinkedList/circularLinkedListCard';
-export {default as StackUsingArray} from './Details/StackUsingArray/stackUsingArrayCard';
-export {default as StackUsingLinkedList} from './Details/stackUsingLinkedList/stackUsingLinkedListCard';
-export {default as QueueUsingArray} from './Details/queueUsingArray/queuekUsingArrayCard';
-export {default as QueueUsingLinkedList} from './Details/queueUsingLinkedList/queuekUsingLinkedListCard';
-export {default as QueueUsingCircularLinkedList} from './Details/queueUsingCircularLinkedList/queuekUsingCircularLinkedListCard';
 export {default as Navbar} from './NavBar/Navbar';
 export {default as Error} from './NavBar/Error';
 export {default as Footer} from './Footer/Footer';
+export {default as Body} from './Body/Body';
+
+export {default as ArrayListFunction} from './Details/ArrayList/ArrayListFunctions';
+export {default as ArrayListBoiler} from './Details/ArrayList/ArrayListBoiler';
+
+export {default as CircularLinkedListFunction} from './Details/CircularLinkedList/circularLinkedListFunction';
+export {default as CircularLinkedListBoiler} from './Details/CircularLinkedList/circularLinkedListboiler';
+
+export {default as DoublyLinkedListFunction} from './Details/DoublyLinkedList/DoublyLinkedListFunction';
+export {default as DoublyLinkedListBoiler} from './Details/DoublyLinkedList/DoublyLinkedListboiler';
+
+export {default as LinkedListFunction} from './Details/LinkedList/LinkedListFunctions';
+export {default as LinkedListBoiler} from './Details/LinkedList/LinkedListboiler';
+
+export {default as LinkedListWithHeaderFunction} from './Details/LinkedListWithHeaderNode/LinkedListWithHeaderFunctions';
+export {default as LinkedListWithHeaderBoiler} from './Details/LinkedListWithHeaderNode/LinkedListWithHeaderboiler';
+
+export {default as QueueUsingArrayFunction} from './Details/queueUsingArray/queueUsingArrayFunctions';
+export {default as QueueUsingArrayBoiler} from './Details/queueUsingArray/queueUsingArrayboiler';
+
+export {default as QueueUsingLinkedListFunction} from './Details/queueUsingLinkedList/queueUsingLinkedListFunctions';
+export {default as QueueUsingLinkedListBoiler} from './Details/queueUsingLinkedList/queueUsingLinkedListboiler';
+
+export {default as QueueUsintCircularLinkedListFunction} from './Details/queueUsingCircularLinkedList/queueUsingCircularLinkedListFunctions';
+export {default as QueueUsintCircularLinkedListBoiler} from './Details/queueUsingCircularLinkedList/queueUsingCircularLinkedListboiler';
+
+export {default as StackUsingArrayFunction} from './Details/StackUsingArray/stackUsingArrayFunctions';
+export {default as StackUsingArrayBoiler} from './Details/StackUsingArray/stackUsingArrayboiler';
+
+export {default as StackUsingLinkedListFunction} from './Details/stackUsingLinkedList/stackUsingLinkedListFunctions';
+export {default as StackUsingLinkedListBoiler} from './Details/stackUsingLinkedList/stackUsingLinkedListboiler';
+
 

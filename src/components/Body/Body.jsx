@@ -1,14 +1,12 @@
 import React from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import Fun from './circularLinkedListFunction';
-import Boiler from './circularLinkedListboiler';
-import Copy from '../../Coppied/Coppied';
-import '../../styling/functionsContainer.css';
+import Copy from '../Coppied/Coppied';
+import './bodyStyle.css';
 
 
 class Card extends React.Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       coppied: false
     }
@@ -30,7 +28,7 @@ class Card extends React.Component {
       <div>
         {this.state.coppied && <Copy />}
         {
-          Boiler.map(e => (
+          this.props.boiler.map(e => (
             <div key={e.dataStructure} className="boilerContainer">
               <div className="boilerHeading">
                 <h1>{e.dataStructure}  basic template</h1>
@@ -52,10 +50,10 @@ class Card extends React.Component {
           ))
         }
         <br />
-        <div className="functionHeading"><h2>Doubly Linked list functions</h2></div>
+        <div className="functionHeading"><h2>{this.props.boiler.map(e => e.dataStructure)} functions</h2></div>
         <div className="cardContainer">
           {
-            Fun.map(e => (
+            this.props.fun.map(e => (
               <div className="card" key={e.funName}>
                 <div className="cardHeading">
                   <h2>{e.funName}</h2>

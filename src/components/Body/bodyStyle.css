@@ -1,0 +1,272 @@
+/* style of the functions card */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.card{
+    padding: 10px;
+    width: 35%;
+    margin: 20px;
+    margin: 30px;
+    border-radius: 35px;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+}
+
+.card:before, .card:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.card:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+
+
+.cardHeading{
+    color: #E9E4F0;
+    min-height: 30px;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    background: #42275a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cardCode{
+    /* width: 400px; */
+    overflow: scroll;
+    max-height: 350px;
+    font-size: 18px;
+}
+
+.cardCopy{
+    font-size: 25px;
+    text-align: center;
+    width: 135px;
+    background-color: rgb(105,68,105);
+    margin: 0 auto;
+    border-radius: 25px 20px 0 25px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+.cardCopy span{
+    color: #fff;
+}
+
+.cardCopy button{
+    font-size: 20px;
+    border: none;
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 25px 20px 0 25px;
+    color: #003771;
+    padding: 3px;
+}
+
+button{
+    outline: none;
+}
+
+button:active{
+    border: node;
+    position: relative;
+    top: 2px;
+}
+
+/* Funcitons heading middle of the page */
+.functionHeading{
+    background: #C9D6FF;
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+    /* height: 30px; */
+    padding: 18px 0 20px 4px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* font-size: larger; */
+}
+
+/* Boiler styling */
+
+.boilerContainer{
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 0 4px 0 4px;
+    /* box-shadow: 0 0 10px 20px hsla(253, 41%, 71%, 0.753); */
+    box-shadow: 0 10px 10px #777b7c;
+    background-color: #111111;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.boilerHeading{
+    background: #606368;  /* fallback for old browsers */
+    padding: 10px;
+    color: #F4F6F7;
+}
+
+.boilerCode{
+    height: 45%;
+    height: 400px;
+    overflow: scroll;
+    background: #212121;
+    /* color: #F4F6F7; */
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-size: 25px; */
+    letter-spacing: 0.6px;
+    word-spacing: 0.2px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.boilerButton{
+    background: rgb(96,99,104);
+    padding: 6px;
+    margin: 0 auto;
+    width: 135px;
+    border-radius:0 25px 0 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.boilerButton button{
+    margin: 0 auto;
+    color: rgb(24, 19, 19);
+    font-size: 20px;
+    padding: 5px;
+    border-radius:0 25px 0 25px;
+    border: 0;
+    background: #EB3349;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(20deg, rgba(235,55,72, 0.7), #EB3349, rgba(235,55,72, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(20deg, rgba(235,55,72, 0.7), #EB3349, rgba(235,55,72, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.boilerButton button span{
+    color: #E9E4F0;
+    font-size: bolder;
+}
+
+
+
+/* For small divices */
+
+@media only screen and (max-width: 768px) {
+
+    .cardContainer{
+        flex-direction: column;
+        justify-content: none;
+        align-items: none;
+    }
+
+    .card{
+        /* min-height: 350p; */
+        margin: 20px;
+        width: 90%;
+        /* border-radius: 8px; */
+    }
+
+    .cardHeading{
+        /* width: 310px; */
+        padding: 5px;
+        text-align: center;
+        background-color: greenyellow;
+    }
+
+    .cardCode{
+        /* width: 320px; */
+        overflow: scroll;
+        max-height: 300px;
+    }
+
+    .cardCopy{
+        /* width: 320px; */
+        font-size: 18px;
+        width: 120px;
+        text-align: center;
+    }
+
+    .cardCopy button{
+        font-size: 18px;
+    }
+
+    .boilerContainer{
+        width: 100%;
+    }
+
+    .boilerHeading{
+        font-size: small;
+    }
+
+
+    .boilerCode{
+        height: 300px;
+    }
+
+    .boilerButton{
+        width: 118px;
+    }
+
+    .boilerButton button{
+        font-size: 17px;
+    }
+
+
+    /* about types of function */
+    .functionHeading{
+        width: 107%;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
