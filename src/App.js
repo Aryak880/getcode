@@ -5,7 +5,8 @@ import {Navbar, Error, Footer, Body, ArrayListFunction, ArrayListBoiler, Circula
         DoublyLinkedListFunction, DoublyLinkedListBoiler, LinkedListFunction, LinkedListBoiler, LinkedListWithHeaderFunction,
         LinkedListWithHeaderBoiler, QueueUsingArrayFunction, QueueUsingArrayBoiler, QueueUsingLinkedListFunction, QueueUsingLinkedListBoiler,
         QueueUsintCircularLinkedListFunction, QueueUsintCircularLinkedListBoiler, StackUsingArrayFunction, StackUsingArrayBoiler,
-        StackUsingLinkedListFunction, StackUsingLinkedListBoiler
+        StackUsingLinkedListFunction, StackUsingLinkedListBoiler, QueueUsingCircularArrayFunction, QueueUsingCircularArrayBoiler,
+
       } from './components';
 
 
@@ -34,6 +35,7 @@ function App() {
 
         <Route path='/queueusingcircularlinkedlist' render={() => <Body fun={QueueUsintCircularLinkedListFunction} boiler={QueueUsintCircularLinkedListBoiler} isAuthed={true}/>} />
 
+        <Route path='/queueusingcirculararray' render={() => <Body fun={QueueUsingCircularArrayFunction} boiler={QueueUsingCircularArrayBoiler} isAuthed={true}/>} />
         <Route component={Error} />
       </Switch>
       <Footer />

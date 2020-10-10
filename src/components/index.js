@@ -1,5 +1,5 @@
 export {default as Navbar} from './NavBar/Navbar';
-export {default as Error} from './NavBar/Error';
+export {default as Error} from './Error/Error';
 export {default as Footer} from './Footer/Footer';
 export {default as Body} from './Body/Body';
 
@@ -33,4 +33,5 @@ export {default as StackUsingArrayBoiler} from './Details/StackUsingArray/stackU
 export {default as StackUsingLinkedListFunction} from './Details/stackUsingLinkedList/stackUsingLinkedListFunctions';
 export {default as StackUsingLinkedListBoiler} from './Details/stackUsingLinkedList/stackUsingLinkedListboiler';
 
-
+export {default as QueueUsingCircularArrayFunction} from './Details/QueueUsingCircularArray/queueUsingCircularArrayFunction';
+export {default as QueueUsingCircularArrayBoiler} from './Details/QueueUsingCircularArray/queueUsingCircularBoiler';

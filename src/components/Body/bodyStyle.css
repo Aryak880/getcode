@@ -86,10 +86,6 @@
     padding: 3px;
 }
 
-.cardCopy span{
-    color: #fff;
-}
-
 .cardCopy button{
     font-size: 20px;
     border: none;
@@ -97,7 +93,7 @@
     background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 25px 20px 0 25px;
-    color: #003771;
+    color: #E9E4F0;
     padding: 3px;
 }
 
@@ -182,7 +178,7 @@ button:active{
 
 .boilerButton button{
     margin: 0 auto;
-    color: rgb(24, 19, 19);
+    color: #E9E4F0;
     font-size: 20px;
     padding: 5px;
     border-radius:0 25px 0 25px;
@@ -192,9 +188,9 @@ button:active{
     background: linear-gradient(20deg, rgba(235,55,72, 0.7), #EB3349, rgba(235,55,72, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.boilerButton button span{
-    color: #E9E4F0;
-    font-size: bolder;
+button span{
+    color: #000;
+    font-weight: bold;
 }
 
 

@@ -43,7 +43,7 @@ class Card extends React.Component {
               <div className="boilerButton">
                 <CopyToClipboard text={e.working}
                 onCopy={() => this.setState({copied: true})}>
-                <button onClick={this.handleClick}>&lt;\<span>Copy code</span>&gt;</button>
+                <button onClick={this.handleClick}><span>&lt;\</span>Copy code<span>&gt;</span></button>
                 </CopyToClipboard>
               </div>
             </div>
@@ -68,7 +68,7 @@ class Card extends React.Component {
                 <div className="cardCopy">
                   <CopyToClipboard text={e.working}
                     onCopy={() => this.setState({copied: true})}>
-                    <button onClick={this.handleClick}>&lt;\<span>Copy code</span>&gt;</button>
+                    <button onClick={this.handleClick}><span>&lt;\</span>Copy code<span>&gt;</span></button>
                   </CopyToClipboard>
                 </div>        
             </div>
