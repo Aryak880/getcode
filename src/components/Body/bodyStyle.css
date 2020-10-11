@@ -189,7 +189,7 @@ button:active{
 }
 
 button span{
-    color: #000;
+    color: rgba(33,33,33, 0.8);
     font-weight: bold;
 }
 
