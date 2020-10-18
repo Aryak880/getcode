@@ -6,6 +6,8 @@ import {Navbar, ContactUs, Error, Footer, Body, ArrayListFunction, ArrayListBoil
         LinkedListWithHeaderBoiler, QueueUsingArrayFunction, QueueUsingArrayBoiler, QueueUsingLinkedListFunction, QueueUsingLinkedListBoiler,
         QueueUsintCircularLinkedListFunction, QueueUsintCircularLinkedListBoiler, StackUsingArrayFunction, StackUsingArrayBoiler,
         StackUsingLinkedListFunction, StackUsingLinkedListBoiler, QueueUsingCircularArrayFunction, QueueUsingCircularArrayBoiler,
+        DequeueUsingCircularArrayFunction, DequeueUsingCircularArrarBoiler, DequeueUsingCircularLinkedListFunction, 
+        DequeueUsingCircularLinkedListBoiler
 
       } from './components';
 
@@ -36,6 +38,10 @@ function App() {
         <Route path='/queueusingcircularlinkedlist' render={() => <Body fun={QueueUsintCircularLinkedListFunction} boiler={QueueUsintCircularLinkedListBoiler} isAuthed={true}/>} />
 
         <Route path='/queueusingcirculararray' render={() => <Body fun={QueueUsingCircularArrayFunction} boiler={QueueUsingCircularArrayBoiler} isAuthed={true}/>} />
+
+        <Route path='/dequeueusingcirculararray' render={() => <Body fun={DequeueUsingCircularArrayFunction} boiler={DequeueUsingCircularArrarBoiler} isAuthed={true}/>} />
+
+        <Route path='/dequeueusingcircularlinkedlist' render={() => <Body fun={DequeueUsingCircularLinkedListFunction} boiler={DequeueUsingCircularLinkedListBoiler} isAuthed={true}/>} />
 
         <Route path='/contactform' component={ContactUs} />
         <Route component={Error} />

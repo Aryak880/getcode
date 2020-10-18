@@ -36,3 +36,9 @@ export {default as StackUsingLinkedListBoiler} from './Details/stackUsingLinkedL
 
 export {default as QueueUsingCircularArrayFunction} from './Details/QueueUsingCircularArray/queueUsingCircularArrayFunction';
 export {default as QueueUsingCircularArrayBoiler} from './Details/QueueUsingCircularArray/queueUsingCircularBoiler';
+
+export {default as DequeueUsingCircularArrayFunction} from './Details/dequeueUsingCircularArray/dequeueUsingCircularArrayFunction';
+export {default as DequeueUsingCircularArrarBoiler} from './Details/dequeueUsingCircularArray/dequeueUsingCircularBoiler';
+
+export {default as DequeueUsingCircularLinkedListFunction} from './Details/dequeueUsingCircularLinkedList/dequeueUsingCircularLinkedListFunction';
+export {default as DequeueUsingCircularLinkedListBoiler} from './Details/dequeueUsingCircularLinkedList/dequeueUsingCircularLinkedListBoiler';

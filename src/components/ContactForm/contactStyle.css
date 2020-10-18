@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background: url(./1.jpeg) fixed no-repeat center;
     background-size: cover;
     /* height: 80vh; */
