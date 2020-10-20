@@ -35,6 +35,8 @@ export default function ContactUs() {
 
           <div className="captcha"><div data-netlify-recaptcha="true"></div></div>
 
+          <br />
+
           <input type="submit" value="Send Message" />
       </form>
     </div>
