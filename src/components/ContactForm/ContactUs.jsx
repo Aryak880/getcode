@@ -1,16 +1,31 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import './contactStyle.css';
 
 // import './ContactUs.css';
 
 export default function ContactUs() {
 
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_cgdy16h', 'template_0q5sk95', e.target, 'user_xvZfgihw5Zh22WtD2qKzh')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+      alert("Email has been sended");
+  }
+
   return (
     <div className="contactFormContainer">
 
-      <form className="contactForm" name="contact" action="POST" data-netlify="true">
+      <form className="contactForm" onSubmit={sendEmail}>
           <h1>Contact form</h1>
-          <span>Fill the form in decent manner</span>
+          <span>Fill the form in disent manner</span>
           <br />
 
           <label>Name</label>
@@ -19,7 +34,7 @@ export default function ContactUs() {
           <br />
 
           <label>Email</label>
-          <input type="email" name="email"  placeholder="Email" required/>
+          <input type="email" name="email" placeholder="Email" required/>
 
           <br />
 
@@ -33,9 +48,7 @@ export default function ContactUs() {
 
           <br />
 
-          <div className="captcha"><div data-netlify-recaptcha="true"></div></div>
-
-          <input type="submit" value="Send Message" />
+          <input type="submit" value="Send message" />
       </form>
     </div>
   );
