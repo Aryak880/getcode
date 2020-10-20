@@ -8,23 +8,23 @@ export default function ContactUs() {
   return (
     <div className="contactFormContainer">
 
-      <form className="contactForm"  method="POST" data-netlify="true">
+      <form className="contactForm" name="contact" method="POST" data-netlify="true">
           <h1>Contact form</h1>
           <span>Fill the form in decent manner</span>
           <br />
 
           <label>Name</label>
-          <input type="text" name="name" id="name" placeholder="Name" required/>
+          <input type="text" name="name" placeholder="Name" required/>
 
           <br />
 
           <label>Email</label>
-          <input type="email" name="email" id="email" placeholder="Email" required/>
+          <input type="email" name="email"  placeholder="Email" required/>
 
           <br />
 
           <label>Subject</label>
-          <input type="text" name="subject" id="message" placeholder="Subject" required/>
+          <input type="text" name="subject" placeholder="Subject" required/>
 
           <br />
 
