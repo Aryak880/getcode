@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <div className="contactFormContainer">
 
-      <form className="contactForm"  method="post" data-netlify="true">
+      <form className="contactForm"  method="POST" data-netlify="true">
           <h1>Contact form</h1>
           <span>Fill the form in decent manner</span>
           <br />
@@ -33,7 +33,7 @@ export default function ContactUs() {
 
           <br />
 
-          <div className="captcha" data-netlify-recaptcha="true"></div>
+          <div className="captcha"><div data-netlify-recaptcha="true"></div></div>
 
           <input type="submit" value="Send Message" />
       </form>
