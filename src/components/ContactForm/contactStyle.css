@@ -16,6 +16,10 @@
     width: 30%;
 }
 
+.captcha{
+    margin: 10px;
+}
+
 .contactForm h1, span{
     text-align: center;
 }

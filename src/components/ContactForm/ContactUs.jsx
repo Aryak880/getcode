@@ -1,45 +1,30 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
 import './contactStyle.css';
 
 // import './ContactUs.css';
 
 export default function ContactUs() {
 
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm('service_cgdy16h', 'template_0q5sk95', e.target, 'user_xvZfgihw5Zh22WtD2qKzh')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-
-      e.target.reset();
-      alert("Email has been sended");
-  }
-
   return (
     <div className="contactFormContainer">
 
-      <form className="contactForm" onSubmit={sendEmail}>
+      <form className="contactForm"  method="post" data-netlify="true">
           <h1>Contact form</h1>
-          <span>Fill the form in disent manner</span>
+          <span>Fill the form in decent manner</span>
           <br />
 
           <label>Name</label>
-          <input type="text" name="name" placeholder="Name" required/>
+          <input type="text" name="name" id="name" placeholder="Name" required/>
 
           <br />
 
           <label>Email</label>
-          <input type="email" name="email" placeholder="Email" required/>
+          <input type="email" name="email" id="email" placeholder="Email" required/>
 
           <br />
 
           <label>Subject</label>
-          <input type="text" name="subject" placeholder="Subject" required/>
+          <input type="text" name="subject" id="message" placeholder="Subject" required/>
 
           <br />
 
@@ -48,7 +33,9 @@ export default function ContactUs() {
 
           <br />
 
-          <input type="submit" value="Send message" />
+          <div className="captcha" data-netlify-recaptcha="true"></div>
+
+          <input type="submit" value="Send Message" />
       </form>
     </div>
   );

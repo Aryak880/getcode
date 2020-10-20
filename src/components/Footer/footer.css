@@ -21,7 +21,7 @@
     list-style: none;
     justify-content: center;
     height: 50px;
-    margin-top: 15px;
+    margin-top: 7px;
 }
 
 .footer ul li{
@@ -38,20 +38,20 @@
 }
 
 .contactform{
-    box-shadow: 0 0 5px 5px #757F9A;
+    box-shadow: 0 0 10px 5px #7994e0da;
     width: fit-content;
     padding: 5px;
     border-radius: 5px 5px 0 0;
     margin: 0 auto;
-    margin-top: 10px;
-    animation: contact 2s ease-in-out infinite;
+    margin-top: 7px;
+    /* animation: contact 2s ease-in-out infinite; */
 }
 
-@keyframes contact{
+/* @keyframes contact{
     20%, 70%{
         box-shadow: 0 0 10px 5px #7994e0da;
     }
-}
+} */
 
 /* rgba(255, 4, 4, 0.6) */
 
