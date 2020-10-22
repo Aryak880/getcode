@@ -75,7 +75,7 @@
     .navContainer{
         display: flex;
         justify-content: none;
-        width: 107%;
+        width: 100%;
         background-color: #f0f0f0;
     }
 

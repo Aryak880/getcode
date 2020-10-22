@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
 }
 
@@ -68,7 +68,6 @@
 }
 
 .cardCode{
-    /* width: 400px; */
     overflow: scroll;
     max-height: 350px;
     font-size: 18px;
@@ -133,7 +132,6 @@ button:active{
     box-shadow: 0 10px 10px #777b7c;
     background-color: #111111;
 }
-
 
 *{
     padding: 0;
@@ -205,9 +203,7 @@ button span{
 @media only screen and (max-width: 768px) {
 
     .cardContainer{
-        flex-direction: column;
-        justify-content: none;
-        align-items: none;
+        display: normal;
     }
 
     .card{
@@ -242,7 +238,7 @@ button span{
     }
 
     .boilerContainer{
-        width: 100%;
+        width: 92%;
     }
 
     .boilerHeading{
@@ -261,7 +257,7 @@ button span{
 
     /* about types of function */
     .functionHeading{
-        width: 107%;
+        /* width: 100%; */
         font-size: 14px;
         text-align: center;
         margin: 0 auto;
