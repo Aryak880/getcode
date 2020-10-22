@@ -25,7 +25,7 @@ export default function ContactUs() {
 
       <form className="contactForm" onSubmit={sendEmail}>
           <h1>Contact form</h1>
-          <span>Fill the form in disent manner</span>
+          <span>Fill the form in decent manner</span>
           <br />
 
           <label>Name</label>
