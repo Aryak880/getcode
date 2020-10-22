@@ -56,10 +56,6 @@ textarea{
 }
 
 @media only screen and (max-width: 768px){
-    .contactFormContainer{
-        width: 102%;
-    }
-
     .contactForm{
         width: 90%;
     }   
