@@ -165,11 +165,16 @@ button:active{
     text-transform: none;
 }
 
+.boilerButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .boilerButton{
     background: rgb(96,99,104);
     padding: 6px;
-    margin: 0 auto;
-    width: 135px;
+    margin: 5px 5px 0 5px;
     border-radius:0 25px 0 25px;
     display: flex;
     justify-content: center;
@@ -249,12 +254,8 @@ button span{
         height: 300px;
     }
 
-    .boilerButton{
-        width: 118px;
-    }
-
     .boilerButton button{
-        font-size: 17px;
+        font-size: 15px;
     }
 
 

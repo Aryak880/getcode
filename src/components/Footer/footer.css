@@ -38,19 +38,12 @@
 }
 
 .contactform{
-    box-shadow: 0 0 5px 5px #757F9A;
+    box-shadow: 0 0 5px 5px #727d9c;
     width: fit-content;
     padding: 5px;
     border-radius: 5px 5px 0 0;
     margin: 0 auto;
     margin-top: 10px;
-    animation: contact 2s ease-in-out infinite;
-}
-
-@keyframes contact{
-    20%, 70%{
-        box-shadow: 0 0 10px 5px #7994e0da;
-    }
 }
 
 /* rgba(255, 4, 4, 0.6) */

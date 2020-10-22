@@ -3,7 +3,6 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import Copy from '../Coppied/Coppied';
 import './bodyStyle.css';
 
-
 class Card extends React.Component {
   constructor(props){
     super(props);
@@ -40,11 +39,18 @@ class Card extends React.Component {
                   </code>
                 </pre>
               </div>
-              <div className="boilerButton">
-                <CopyToClipboard text={e.working}
-                onCopy={() => this.setState({copied: true})}>
-                <button onClick={this.handleClick}><span>&lt;\</span>Copy code<span>&gt;</span></button>
-                </CopyToClipboard>
+            
+              <div className="boilerButtonContainer">
+                <div className="boilerButton">
+                  <CopyToClipboard text={e.working}
+                  onCopy={() => this.setState({copied: true})}>
+                  <button onClick={this.handleClick}><span>&lt;\</span>Copy code<span>&gt;</span></button>
+                  </CopyToClipboard>
+                </div>
+
+                <div className="boilerButton">
+                  <a href={this.props.fileLink}  download={this.props.fileName} target="_blank" rel="noopener noreferrer"><button><span>&lt;\</span>Download code file<span>&gt;</span></button></a>
+                </div>
               </div>
             </div>
           ))

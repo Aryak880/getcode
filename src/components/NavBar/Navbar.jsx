@@ -12,7 +12,7 @@ const LinkStyle = {
   color: "#111111"
 }
 
-//path= dequeueusingcircularlinkedlist
+//path= priorityqueueusinglinkedlist
 
 const List = () => {
   return(
@@ -37,12 +37,18 @@ const List = () => {
             <Link to="/queueusingarray" style={LinkStyle}><Dropdown.Item as="button">Queue using array</Dropdown.Item></Link>
             <Link to="/queueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Queue using circular Array</Dropdown.Item></Link>
             <Link to="/queueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using linked list</Dropdown.Item></Link>
-            <Link to="/queueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using circular linked list</Dropdown.Item></Link>            
+            <Link to="/queueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using circular linked list</Dropdown.Item></Link>
           </DropdownButton>
 
           <DropdownButton id="dropdown-item-button" title="Dequeue">
             <Link to="/dequeueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Dequeue using circular array</Dropdown.Item></Link>
             <Link to="/dequeueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Dequeue using circular linked list</Dropdown.Item></Link>
+          </DropdownButton>
+
+          <DropdownButton id="dropdown-item-button" title="More...">
+            
+            <Link to="/priorityqueueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Priority queue using linked list</Dropdown.Item></Link>
+            
           </DropdownButton>
     </ul>
   )

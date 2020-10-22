@@ -3,46 +3,53 @@ const fun = [
         funName: "Enqueue(insert) element",
         working:
 `//Function declaration
-void enqueue(int data);
+void insert(int data, int pre);
 
 /*
 struct type->
 
 struct node
 {
+    int pre;
     int data;
     struct node *next;
-}
+}*front = NULL;
 
 1. Function arguments
         a. element to be inserted
+        b. priority of the element
 2. Function return void
 3. You must have declare globle node pointer
         a. front // for point to the front of queue
-        b. rear // for point to the front of queue
 */
 
 //Function defination
-void enqueue(int data)
+void insert(int data, int pre)
 {
-    struct node *temp;
+    struct node *p, *temp;
     temp = (struct node *)malloc(sizeof(struct node));
 
     if(temp == NULL){
-        printf("  Queue overflow  ");
+        printf("  Memory not available  ");
         return;
     }
 
     temp->data = data;
-    temp->next = NULL;
+    temp->pre = pre;
 
-    if(isEmpty())
+    if(isEmpty() || pre < front->pre){
+        temp->next = front;
         front = temp;
+        return;
+    }
 
-    else
-    rear->next = temp;
+    p = front;
 
-    rear = temp;
+    while(p->next != NULL && p->next->pre <= pre)
+        p = p->next;
+
+    temp->next = p->next;
+    p->next = temp;
 }
 `
     },
@@ -50,25 +57,26 @@ void enqueue(int data)
         funName: "Dequeue(delete) element",
         working:
 `//Function declaration
-int dequeue();
+int del();
 
 /*
 struct type->
 
 struct node
 {
+    int pre;
     int data;
     struct node *next;
-}
+}*front = NULL;
 
-1. Function return int data of dequeued node
+1. Function return data of deleted element
+    if queue empty return - 255;
 2. You must have declare globle node pointer
         a. front // for point to the front of queue
-        b. rear // for point to the last of queue
 */
 
 //Function defination
-int dequeue()
+int del()
 {
     int data;
     struct node *temp;
@@ -78,11 +86,11 @@ int dequeue()
         return -255;
     }
 
-    data = front->data;
     temp = front;
-
+    data = front->data;
     front = front->next;
     free(temp);
+
     return data;
 }
 `
@@ -98,14 +106,15 @@ struct type->
 
 struct node
 {
+    int pre;
     int data;
     struct node *next;
-}
+}*front = NULL;
 
-1. Function return int data of peeked node if empty return -255
+1. Function return data of peeked element
+    if queue empty return - 255;
 2. You must have declare globle node pointer
         a. front // for point to the front of queue
-        b. rear // for point to the front of queue
 */
 
 //Function defination
@@ -134,12 +143,11 @@ struct node
 {
     int data;
     struct node *next;
-}
+} *front = NULL;
 
 1. Function return 1 if queue is empty else 0
 2. You must have declare globle node pointer
         a. front // for point to the front of queue
-        b. rear // for point to the front of queue
 */
 
 //Function defination
@@ -163,20 +171,19 @@ struct node
 {
     int data;
     struct node *next;
-}
+} *front = NULL;
 
 1. Function return void
 2. You must have declare globle node pointer
         a. front // for point to the front of queue
-        b. rear // for point to the front of queue
 */
 
 //Function defination
 void printList()
 {
     struct node *p;
-    if(isEmpty()){
-        printf("List is empty  ");
+    if(front == NULL){
+        printf("  List is empty  ");
         return;
     }
 
