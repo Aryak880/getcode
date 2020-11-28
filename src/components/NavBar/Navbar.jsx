@@ -16,41 +16,41 @@ const LinkStyle = {
 
 const List = () => {
   return(
-    <ul>
-          <DropdownButton id="dropdown-item-button" title="Linked List">
-            <Link to="/" style={LinkStyle}><Dropdown.Item as="button">Linked List</Dropdown.Item></Link>
-            <Link to="/circularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Circular linked list</Dropdown.Item></Link>
-            <Link to="/doublylinkedlist" style={LinkStyle}><Dropdown.Item as="button">Doubly Linked list</Dropdown.Item></Link>
-            <Link to="/linkedlistwithheadernode" style={LinkStyle}><Dropdown.Item as="button">Link list with header node</Dropdown.Item></Link>
-          </DropdownButton>
+    <>
+      <ul>
+            <DropdownButton id="dropdown-item-button" title="Linked List">
+              <Link to="/" style={LinkStyle}><Dropdown.Item as="button">Linked List</Dropdown.Item></Link>
+              <Link to="/circularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Circular linked list</Dropdown.Item></Link>
+              <Link to="/doublylinkedlist" style={LinkStyle}><Dropdown.Item as="button">Doubly Linked list</Dropdown.Item></Link>
+              <Link to="/linkedlistwithheadernode" style={LinkStyle}><Dropdown.Item as="button">Link list with header node</Dropdown.Item></Link>
+            </DropdownButton>
 
-          <DropdownButton id="dropdown-item-button" title="Array List">
-            <Link to="/arraylist" style={LinkStyle}><Dropdown.Item as="button" style={{minWidth: "250px"}}>Array list</Dropdown.Item></Link>
-          </DropdownButton>
+            <DropdownButton id="dropdown-item-button" title="Array List">
+              <Link to="/arraylist" style={LinkStyle}><Dropdown.Item as="button" style={{minWidth: "250px"}}>Array list</Dropdown.Item></Link>
+            </DropdownButton>
 
-          <DropdownButton id="dropdown-item-button" title="Stack">
-            <Link to="/stackusingarray" style={LinkStyle}><Dropdown.Item as="button">Stack using array</Dropdown.Item></Link>
-            <Link to="/stackusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Stack using linked list</Dropdown.Item></Link>
-          </DropdownButton>
+            <DropdownButton id="dropdown-item-button" title="Stack">
+              <Link to="/stackusingarray" style={LinkStyle}><Dropdown.Item as="button">Stack using array</Dropdown.Item></Link>
+              <Link to="/stackusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Stack using linked list</Dropdown.Item></Link>
+            </DropdownButton>
 
-          <DropdownButton id="dropdown-item-button" title="Queue">
-            <Link to="/queueusingarray" style={LinkStyle}><Dropdown.Item as="button">Queue using array</Dropdown.Item></Link>
-            <Link to="/queueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Queue using circular Array</Dropdown.Item></Link>
-            <Link to="/queueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using linked list</Dropdown.Item></Link>
-            <Link to="/queueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using circular linked list</Dropdown.Item></Link>
-          </DropdownButton>
+            <DropdownButton id="dropdown-item-button" title="Queue">
+              <Link to="/queueusingarray" style={LinkStyle}><Dropdown.Item as="button">Queue using array</Dropdown.Item></Link>
+              <Link to="/queueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Queue using circular Array</Dropdown.Item></Link>
+              <Link to="/queueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using linked list</Dropdown.Item></Link>
+              <Link to="/queueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using circular linked list</Dropdown.Item></Link>
+            </DropdownButton>
 
-          <DropdownButton id="dropdown-item-button" title="Dequeue">
-            <Link to="/dequeueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Dequeue using circular array</Dropdown.Item></Link>
-            <Link to="/dequeueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Dequeue using circular linked list</Dropdown.Item></Link>
-          </DropdownButton>
+            <DropdownButton id="dropdown-item-button" title="Dequeue">
+              <Link to="/dequeueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Dequeue using circular array</Dropdown.Item></Link>
+              <Link to="/dequeueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Dequeue using circular linked list</Dropdown.Item></Link>
+            </DropdownButton>
 
-          <DropdownButton id="dropdown-item-button" title="More...">
-            
-            <Link to="/priorityqueueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Priority queue using linked list</Dropdown.Item></Link>
-            
-          </DropdownButton>
-    </ul>
+            <DropdownButton id="dropdown-item-button" title="More...">
+              <Link to="/priorityqueueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Priority queue using linked list</Dropdown.Item></Link>              
+            </DropdownButton>
+      </ul>
+    </>
   )
 }
 

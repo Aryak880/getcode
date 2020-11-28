@@ -12,7 +12,18 @@ const LinkStyle = {
 function Footer() {
     return(
         <div className="footer">
-            <div className="contactform"><Link to='/contactform' style={LinkStyle}><RiContactsFill color=" #f0f0f0" size={18}/> Send your feedback or any message</Link></div>
+            
+                <div className="contactform">
+                    <Link to='/contactform' style={LinkStyle}><RiContactsFill color=" #f0f0f0" size={18}/> Send your feedback or any message</Link>
+                </div>
+                <div className="contactform">
+                    <a href="https://documentaion-getcode.netlify.app/" 
+                       style={{
+                           textDecoration: 'none'
+                       }}
+                        >Documentation</a>
+                </div>
+            
             <ul>
                 <li><a href="https://www.facebook.com/aryaksingh.chauhan.5/" target="_blank"  rel="noopener noreferrer" > <AiFillFacebook color=" #000000" size={25}/> </a></li>
                 <li><a href="https://www.instagram.com/aryaksinghchauhan/" target="_blank"  rel="noopener noreferrer" > < AiFillInstagram color=" #000000"  size={25}/> </a></li>

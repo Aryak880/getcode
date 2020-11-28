@@ -3,8 +3,8 @@
 
 struct node
 {
-    int info;
-    struct node *link;
+    int data;
+    struct node *next;
 };
 
 struct node *create_list(struct node *start);
@@ -132,7 +132,7 @@ void count(struct node *start)
     while(p != NULL)
     {
         i++;
-        p = p->link;
+        p = p->next;
     }
 
     printf("Number of nodes are: %d\n\n", i);
@@ -150,8 +150,8 @@ void display(struct node *start)
 
     printf("List of element\n");
     while(p != NULL){
-        printf("%d ", p->info);
-        p = p->link;
+        printf("%d ", p->data);
+        p = p->next;
     }
 
     printf("\n\n");
@@ -169,12 +169,12 @@ void search(struct node *start, int data)
     }
 
     while(p != NULL){
-        if(p->info == data){
+        if(p->data == data){
             printf("%d is present at index %d\n\n", data, i);
             return;
         }
         i++;
-        p = p->link;
+        p = p->next;
     }
 
     printf("%d is not present in list\n\n", data);
@@ -208,9 +208,9 @@ struct node *addatbeg(struct node *start, int data)
     struct node *p;
 
      p = (struct node *)malloc(sizeof(struct node));
-     p->info = data;
+     p->data = data;
 
-     p->link = start;
+     p->next = start;
      start = p;
 
      return start;
@@ -222,13 +222,13 @@ struct node *addatend(struct node *start, int data)
     p = start;
     temp = (struct node *)malloc(sizeof(struct node));
 
-    temp->info = data;
-    temp->link = NULL;
+    temp->data = data;
+    temp->next = NULL;
 
-    while(p->link != NULL)
-        p = p->link;
+    while(p->next != NULL)
+        p = p->next;
 
-    p->link = temp;
+    p->next = temp;
 
     return start;
 }
@@ -239,15 +239,15 @@ struct node *addafter(struct node *start, int data, int item)
     p = start;
 
     while(p != NULL){
-        if(p->info == item){
+        if(p->data == item){
             temp = (struct node*)malloc(sizeof(struct node));
-            temp->info = data;
-            temp->link = p->link;
-            p->link = temp;
+            temp->data = data;
+            temp->next = p->next;
+            p->next = temp;
             return start;
         }
 
-        p = p->link;
+        p = p->next;
     }
 
     printf("%d doesn't present in list\n\n", data);
@@ -264,24 +264,24 @@ struct node *addbefore(struct node *start, int data, int item)
         return start;
     }
 
-    if(start->info == item){
+    if(start->data == item){
         temp = (struct node *)malloc(sizeof(struct node));
-        temp->info = data;
-        temp->link = start;
+        temp->data = data;
+        temp->next = start;
         start = temp;
         return start;
     }
 
-    while(p->link != NULL){
-        if(p->link->info == item){
+    while(p->next != NULL){
+        if(p->next->data == item){
             temp = (struct node *)malloc(sizeof(struct node));
-            temp->info = data;
-            temp->link = p->link;
-            p->link = temp;
+            temp->data = data;
+            temp->next = p->next;
+            p->next = temp;
             return start;
         }
 
-        p = p->link;
+        p = p->next;
     }
 
     printf("%d is not present in list\n\n", item);
@@ -295,23 +295,23 @@ struct node *addatpos(struct node *start, int data, int pos)
     p = start;
 
     temp = (struct node*)malloc(sizeof(struct node));
-    temp->info = data;
+    temp->data = data;
 
     if(pos == 1){
-        temp->link = start;
+        temp->next = start;
         start = temp;
         return start;
     }
 
     for(i=1; i<pos-1 && p != NULL; i++)
-        p = p->link;
+        p = p->next;
 
     if(p == NULL){
         printf("List is small\n\n");
     }
     else{
-        temp->link = p->link;
-        p->link = temp;
+        temp->next = p->next;
+        p->next = temp;
     }
 
     return start;
@@ -324,8 +324,8 @@ struct node *reverse(struct node *start)
     pre = NULL;
 
     while(ptr != NULL){
-        next = ptr->link;
-        ptr->link = pre;
+        next = ptr->next;
+        ptr->next = pre;
         pre = ptr;
         ptr = next;
     }
@@ -343,22 +343,22 @@ struct node *del(struct node *start, int data)
         return start;
     }
 
-    if(start->info == data){
+    if(start->data == data){
         temp = start;
-        start = start->link;
+        start = start->next;
         free(temp);
         return start;
     }
 
-    while(p->link != NULL){
-        if(p->link->info == data){
-            temp = p->link;
-            p->link = temp->link;
+    while(p->next != NULL){
+        if(p->next->data == data){
+            temp = p->next;
+            p->next = temp->next;
             free(temp);
             return start;
         }
 
-        p = p->link;
+        p = p->next;
     }
 
     printf("%d is not present in list\n\n");
