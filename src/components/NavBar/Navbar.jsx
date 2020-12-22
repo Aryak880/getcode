@@ -36,9 +36,9 @@ const List = () => {
 
             <DropdownButton id="dropdown-item-button" title="Queue">
               <Link to="/queueusingarray" style={LinkStyle}><Dropdown.Item as="button">Queue using array</Dropdown.Item></Link>
-              <Link to="/queueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Queue using circular Array</Dropdown.Item></Link>
+              <Link to="/queueusingcirculararray" style={LinkStyle}><Dropdown.Item as="button">Circular Queue using Array</Dropdown.Item></Link>
               <Link to="/queueusinglinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using linked list</Dropdown.Item></Link>
-              <Link to="/queueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Queue using circular linked list</Dropdown.Item></Link>
+              <Link to="/queueusingcircularlinkedlist" style={LinkStyle}><Dropdown.Item as="button">Circular Queue using linked list</Dropdown.Item></Link>
             </DropdownButton>
 
             <DropdownButton id="dropdown-item-button" title="Dequeue">
