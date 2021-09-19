@@ -7,6 +7,15 @@
 It is website which provide user boilerplate/template and basic functions of different data structures link stact, queue, link-list etc, On one click in C language.
 
 
+## Installation
+
+Install GetCode on local machine/service provider
+
+```bash
+  npm start
+```
+    
+
 ## Documentation
 
 [Documentation](https://documentaion-getcode.netlify.app/)
