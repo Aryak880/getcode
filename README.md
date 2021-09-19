@@ -5,6 +5,7 @@
 # Get Code
 
 It is website which provide user boilerplate/template and basic functions of different data structures link stact, queue, link-list etc, On one click in C language.
+It developed on React.js so all the deployment script are same as tipical react project
 
 
 ## Installation
