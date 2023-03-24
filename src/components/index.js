@@ -2,7 +2,6 @@ export {default as Navbar} from './NavBar/Navbar';
 export {default as Error} from './Error/Error';
 export {default as Footer} from './Footer/Footer';
 export {default as Body} from './Body/Body';
-export {default as ContactUs} from './ContactForm/ContactUs';
 
 export {default as ArrayListFunction} from './Details/ArrayList/ArrayListFunctions';
 export {default as ArrayListBoiler} from './Details/ArrayList/ArrayListBoiler';

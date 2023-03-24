@@ -8,7 +8,7 @@
     background: #757F9A;
     background: -webkit-linear-gradient(-50deg, #D7DDE8, #757F9A);
     background: linear-gradient(-50deg, #D7DDE8, #757F9A);
-    border-top: 3px solid rgba(224,60,59, 0.5);
+    border-top: 4px solid #e03c3b80;
     border-radius: 5px 5px 0 0;
     transition-duration: 1s;
     opacity: 0.8;

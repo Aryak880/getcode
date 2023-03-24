@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
 .error{
     height: 75vh;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    text-align: center;
     background: url(./2.jpeg) no-repeat fixed;
     background-size: cover;
     background-position: bottom;
 }
 
 .error h1{
-    color: #000000;
-    position: relative;
-    top: 40px;
-    animation: A 2s ease-in-out infinite;
+    color: #eeecec;
+    font-family: 'Lilita One', cursive;
+    -webkit-text-stroke: 1px #000000;
 }
 
 
@@ -24,15 +27,3 @@
     }    
 }
 
-@keyframes A{
-    0%, 50%{
-        text-shadow: 0px 0px 5px blue;
-    }
-    50%, 90%{
-        text-shadow: 0px 0px 5px rgb(255,0,45);
-        /* font-size: larger; */
-    }
-    100%{
-        text-shadow: 0px 0px 5px blue;
-    }
-}

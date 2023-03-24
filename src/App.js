@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import {Navbar, ContactUs, Error, Footer, Body, ArrayListFunction, ArrayListBoiler, CircularLinkedListFunction, CircularLinkedListBoiler,
+import {Navbar, Error, Footer, Body, ArrayListFunction, ArrayListBoiler, CircularLinkedListFunction, CircularLinkedListBoiler,
         DoublyLinkedListFunction, DoublyLinkedListBoiler, LinkedListFunction, LinkedListBoiler, LinkedListWithHeaderFunction,
         LinkedListWithHeaderBoiler, QueueUsingArrayFunction, QueueUsingArrayBoiler, QueueUsingLinkedListFunction, QueueUsingLinkedListBoiler,
         QueueUsintCircularLinkedListFunction, QueueUsintCircularLinkedListBoiler, StackUsingArrayFunction, StackUsingArrayBoiler,
@@ -49,7 +49,7 @@ function App() {
 
         <Route path='/dequeueusingcircularlinkedlist' render={() => <Body fun={DequeueUsingCircularLinkedListFunction} boiler={DequeueUsingCircularLinkedListBoiler} fileLink={DequeueUsingCircularLinkedListFile} fileName="dequeueUsingCircularLinkedList.c"/>} />
 
-        <Route path='/contactform' component={ContactUs} />
+        {/* <Route path='/contactform' component={ContactUs} /> */}
         <Route component={Error} />
       </Switch>
       <Footer />
