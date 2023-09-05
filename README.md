@@ -25,17 +25,21 @@ Install GetCode on local machine/service provider
 ## Demo
 
 Demo of using GetCode if you have downloaded the template file.
-https://github.com/Aryak880/getcode/assets/57568703/19069a31-d659-4a73-8c9c-b65d6edaff2b
+https://youtu.be/a7vBaxSM4dM
+
+![Demo of using template file on Get Code  _ data structure](https://github.com/Aryak880/getcode/assets/57568703/fb8a4ab8-d3f8-43e6-a62b-508c0a06b142)
+
 
 
 
 Demo of using GetCode if you have coppied the template code.
-https://github.com/Aryak880/getcode/assets/57568703/daa67de9-36ca-46e5-8513-49cea04cb595
+https://youtu.be/BRUNe7viv3M
+![Demo of using template code on Get Code  _ data structure](https://github.com/Aryak880/getcode/assets/57568703/4e50ede3-b5fc-4ded-895f-c3ebfe04f8c7)
+
 
 
 Demo of using GetCode if you have coppied the function code.
-[https://github.com/Aryak880/getcode/assets/57568703/a3489c5d-6e6c-475f-b7b8-3a91858ac8b6](https://youtu.be/rEHeZFneXRI)
-
+https://youtu.be/rEHeZFneXRI
 ![Demo of using function on Get Code  _ data structure](https://github.com/Aryak880/getcode/assets/57568703/21d48c41-0023-4ab7-9695-0adfa76d3b54)
 
 
