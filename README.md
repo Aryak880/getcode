@@ -24,6 +24,19 @@ Install GetCode on local machine/service provider
   
 ## Demo
 
+Demo of using GetCode if you have downloaded the template file.
+https://github.com/Aryak880/getcode/assets/57568703/19069a31-d659-4a73-8c9c-b65d6edaff2b
+
+
+
+Demo of using GetCode if you have coppied the template code.
+https://github.com/Aryak880/getcode/assets/57568703/daa67de9-36ca-46e5-8513-49cea04cb595
+
+
+Demo of using GetCode if you have coppied the function code.
+https://github.com/Aryak880/getcode/assets/57568703/a3489c5d-6e6c-475f-b7b8-3a91858ac8b6
+
+
 
 Follow this link to see demo: 
 [link](https://documentaion-getcode.netlify.app/#howToUse)
