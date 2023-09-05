@@ -34,7 +34,8 @@ https://github.com/Aryak880/getcode/assets/57568703/daa67de9-36ca-46e5-8513-49ce
 
 
 Demo of using GetCode if you have coppied the function code.
-https://github.com/Aryak880/getcode/assets/57568703/a3489c5d-6e6c-475f-b7b8-3a91858ac8b6
+[https://github.com/Aryak880/getcode/assets/57568703/a3489c5d-6e6c-475f-b7b8-3a91858ac8b6](https://youtu.be/rEHeZFneXRI)
+
 ![Demo of using function on Get Code  _ data structure](https://github.com/Aryak880/getcode/assets/57568703/21d48c41-0023-4ab7-9695-0adfa76d3b54)
 
 
